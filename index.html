@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Watson Speech to Text client example</title>
+</head>
+<body>
+<section>
+    <h2>Press the 'mic' button and speak</h2>
+    <button onclick="startButton()" id="mic">mic</button>
+    <button onclick="clickHello()" id="hello">hello</button>
+    <button onclick="clickBye()" id="goodbye">goodbye</button>
+    <button onclick="scrollUp()" id="scroll up">scroll up</button>
+    <button onclick="scrollDown()" id="scroll down">scroll down</button>
+    <textarea rows="2" cols="50" id="text">text</textarea>
+    <div id="results" style="display: none">
+          <span class="final" id="final_span"></span>
+          <span class="interim" id="interim_span"></span>
+    </div>
+</section>
+<img src="https://www.pixelstalk.net/wp-content/uploads/2015/11/Arsenal-Stadium-Wallpaper.jpg" alt="W3Schools.com">
+
+
+<script src="jquery.min.js"></script>
+<script src="speech.js"></script>
+</body>
+</html>
