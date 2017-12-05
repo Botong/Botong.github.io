@@ -33,6 +33,7 @@ $(document).ready(function() {
 });
 
 function handleCommand(command) {
+    console.log(command);
     if(inText) {
         if(firstTime) {
             $("textarea").get(0).innerHTML = "";
@@ -45,11 +46,9 @@ function handleCommand(command) {
     var shouldAlert = true;
     $("button, textarea").each(function() {
         var resource = $(this).get(0).id;
-        console.log(resource);
         if(resource === command){
             simulateClick($(this).get( 0 ));
             if(resource === "text") {
-                console.log("in text");
                 inText = true;
             }
             shouldAlert = false;
